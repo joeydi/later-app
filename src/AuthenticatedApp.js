@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import UnreadBookmarks from "./pages/UnreadBookmarks";
 import StarredBookmarks from "./pages/StarredBookmarks";
 import ArchivedBookmarks from "./pages/ArchivedBookmarks";
+import TaggedBookmarks from "./pages/TaggedBookmarks";
 import NotFound from "./pages/NotFound";
 
 const AuthenticatedApp = () => {
@@ -26,6 +27,7 @@ const AuthenticatedApp = () => {
                       <Route exact path="/" component={UnreadBookmarks} />
                       <Route exact path="/starred" component={StarredBookmarks} />
                       <Route exact path="/archive" component={ArchivedBookmarks} />
+                      <Route exact path="/tag/:tag" component={TaggedBookmarks} />
                       <Route component={NotFound} />
                     </Switch>
                   </div>

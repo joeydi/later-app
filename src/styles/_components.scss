@@ -1,11 +1,14 @@
 .bookmark-excerpt {
   position: relative;
   display: block;
-  color: inherit;
 
-  &:hover {
-    text-decoration: none;
+  a {
     color: inherit;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   .favicon {
