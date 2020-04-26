@@ -16,9 +16,11 @@
 @import "typography";
 @import "header";
 @import "components";
+@import "transitions";
 
 main {
-  @include section-margin;
+  @include section-padding;
+  min-height: 100vh;
 }
 
 :focus {

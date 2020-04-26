@@ -1,0 +1,46 @@
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s linear 0.25s, transform 0.5s $ease-out 0.25s;
+}
+
+.fade-exit {
+    @include fill;
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 0.25s linear, transform 0.25s $ease-out;
+}
+
+.fadeQuick-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fadeQuick-enter.fadeQuick-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.25s linear 0.125s, transform 0.125s $ease-out 0.125s;
+}
+
+.fadeQuick-exit {
+    @include fill;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fadeQuick-exit-active {
+    opacity: 0;
+    transition: opacity 0.125s linear, transform 0.125s $ease-out;
+}
+
+.main-transition-group {
+    position: relative;
+}

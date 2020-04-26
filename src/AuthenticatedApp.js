@@ -20,7 +20,7 @@ const AuthenticatedApp = () => {
           return (
             <div className="main-transition-group">
               <TransitionGroup>
-                <CSSTransition key={location} timeout={750} classNames="fade">
+                <CSSTransition key={location.pathname} timeout={750} classNames="fade">
                   <div className="main-transition-item">
                     <Switch location={location}>
                       <Route exact path="/" component={UnreadBookmarks} />
