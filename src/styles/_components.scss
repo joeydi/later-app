@@ -33,7 +33,32 @@
   }
 
   p {
-    margin-bottom: 0;
     color: $darker-grey;
+  }
+
+  ul.tags {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: block;
+      margin: 0 0.5rem 0.5rem 0;
+      padding: 4px 16px;
+      background-color: $lightest-grey;
+      border-radius: 20px;
+      line-height: 1;
+      font-weight: $font-weight-medium;
+      font-size: rem(11px);
+      color: $grey;
+      transition: background-color 0.25s linear;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $lighter-grey;
+      }
+    }
   }
 }
