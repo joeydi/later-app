@@ -1,0 +1,85 @@
+header {
+  position: relative;
+  padding-top: 60px;
+  border-bottom: 1px solid $lighter-grey;
+
+  .branding {
+    display: inline-flex;
+    align-items: center;
+    font-size: rem(24px);
+    font-weight: $font-weight-bold;
+    color: $black;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    img {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-right: 1rem;
+    }
+
+    a {
+      display: block;
+      padding: 0.5rem;
+      font-weight: $font-weight-medium;
+      font-size: rem(14px);
+      color: $black;
+
+      &.active {
+        border-bottom: 2px solid $black;
+      }
+    }
+  }
+
+  .avatar {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: right;
+  }
+}
+
+.search-form {
+  position: relative;
+  width: 100%;
+
+  &:focus-within img {
+    opacity: 1;
+  }
+
+  img {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    transition: opacity 0.25s linear;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 10px 30px 10px 70px;
+    appearance: none;
+    background-color: $lightest-grey;
+    border: 1px solid $lighter-grey;
+    border-radius: 30px;
+    line-height: 40px;
+  }
+}

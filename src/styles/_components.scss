@@ -1,0 +1,32 @@
+.bookmark-excerpt {
+  position: relative;
+
+  .favicon {
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
+
+  .domain {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    font-size: rem(12px);
+    font-weight: $font-weight-medium;
+    color: $grey;
+  }
+
+  h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: $darker-grey;
+  }
+}

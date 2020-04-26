@@ -1,0 +1,119 @@
+@mixin xs {
+    @media (min-width: map-get($grid-breakpoints, 'xs')) { @content; }
+}
+
+@mixin sm {
+    @media (min-width: map-get($grid-breakpoints, 'sm')) { @content; }
+}
+
+@mixin md {
+    @media (min-width: map-get($grid-breakpoints, 'md')) { @content; }
+}
+
+@mixin lg {
+    @media (min-width: map-get($grid-breakpoints, 'lg')) { @content; }
+}
+
+@mixin xl {
+    @media (min-width: map-get($grid-breakpoints, 'xl')) { @content; }
+}
+
+@mixin xxl {
+    @media (min-width: map-get($grid-breakpoints, 'xxl')) { @content; }
+}
+
+@mixin fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.fill { @include fill; }
+
+@mixin cover {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.cover { @include cover; }
+
+@mixin contain {
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.cover { @include cover; }
+
+@mixin section-margin {
+    margin: 40px 0;
+
+    @include sm {
+        margin: 60px 0;
+    }
+
+    @include md {
+        margin: 80px 0;
+    }
+
+    @include lg {
+        margin: 100px 0;
+    }
+
+    @include xl {
+        margin: 120px 0;
+    }
+}
+.section-margin { @include section-margin; }
+
+@mixin section-padding {
+    padding: 40px 0;
+
+    @include sm {
+        padding: 60px 0;
+    }
+
+    @include md {
+        padding: 80px 0;
+    }
+
+    @include lg {
+        padding: 100px 0;
+    }
+
+    @include xl {
+        padding: 120px 0;
+    }
+}
+.section-padding { @include section-padding; }
+
+@mixin content-margin {
+    margin: 30px 0;
+
+    @include md {
+        margin: 40px 0;
+    }
+
+    @include lg {
+        margin: 60px 0;
+    }
+}
+.content-margin { @include content-margin; }
+
+@mixin content-padding {
+    padding: 30px 0;
+
+    @include md {
+        padding: 40px 0;
+    }
+
+    @include lg {
+        padding: 60px 0;
+    }
+}
+.content-padding { @include content-padding; }
+
+@mixin debug {
+    outline: 1px solid red;
+}
+.debug { @include debug; }

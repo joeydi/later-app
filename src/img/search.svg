@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon-search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detail" transform="translate(-505.000000, -80.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Header" transform="translate(0.000000, 60.000000)">
+                <g id="Search" transform="translate(477.000000, 0.000000)">
+                    <g id="icon-search" transform="translate(28.000000, 20.000000)">
+                        <path d="M14.32,12.9 L19.71,18.3 C20.0471653,18.6991459 20.0202154,19.290578 19.6481468,19.6574061 C19.2760783,20.0242342 18.6843235,20.0427927 18.29,19.7 L12.91,14.32 C9.57396751,16.9114945 4.79796777,16.4625999 2.00324212,13.2948775 C-0.791483525,10.1271551 -0.641657117,5.3324464 2.34539464,2.34539464 C5.3324464,-0.641657117 10.1271551,-0.791483525 13.2948775,2.00324212 C16.4625999,4.79796777 16.9114945,9.57396751 14.32,12.91 L14.32,12.9 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

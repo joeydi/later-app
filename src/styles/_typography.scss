@@ -1,0 +1,56 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+ol, ul, dl {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    transition: color 0.25s;
+}
+
+code {
+    font-family: $font-family-monospace;
+}
+
+.btn {
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+svg.icon {
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+}
+
+.font-weight-medium {
+    font-weight: $font-weight-medium !important;
+}
+
+// Colors
+
+.text-white { color: $white ; }
+.text-lightest-grey { color: $lightest-grey ; }
+.text-lighter-grey { color: $lighter-grey ; }
+.text-light-grey { color: $light-grey ; }
+.text-grey { color: $grey ; }
+.text-dark-grey { color: $dark-grey ; }
+.text-darker-grey { color: $darker-grey ; }
+.text-black { color: $black ; }
+.text-red { color: $red ; }
+.text-yellow { color: $yellow ; }
+.text-green { color: $green ; }
+.text-blue { color: $blue ; }
+.text-dark-blue { color: $dark-blue ; }
+.text-darker-blue { color: $darker-blue ; }
