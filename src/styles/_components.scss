@@ -64,4 +64,54 @@
       }
     }
   }
+
+  &:hover .actions button {
+    color: $dark-grey;
+    transition: background-color 0.125s linear, color 0.125s linear;
+
+    &:nth-child(1) {
+      transition: background-color 0.125s linear, color 0.125s linear 0s;
+    }
+    &:nth-child(2) {
+      transition: background-color 0.125s linear, color 0.125s linear 0.05s;
+    }
+    &:nth-child(3) {
+      transition: background-color 0.125s linear, color 0.125s linear 0.1s;
+    }
+    &:nth-child(4) {
+      transition: background-color 0.125s linear, color 0.125s linear 0.15s;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      margin-left: 1rem;
+      border-radius: 50%;
+      color: $light-grey;
+      border: none;
+      appearance: none;
+      transition: background-color 0.25s linear, color 0.25s linear;
+
+      &:hover {
+        background-color: $lighter-grey;
+        color: $darker-grey;
+      }
+
+      svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 }

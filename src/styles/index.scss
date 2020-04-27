@@ -23,7 +23,8 @@ main {
   min-height: 100vh;
 }
 
-input:focus {
+input:focus,
+button:focus {
   outline: none;
   box-shadow: $input-focus-box-shadow;
   transition: box-shadow 0.25s linear;

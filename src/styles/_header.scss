@@ -22,7 +22,7 @@ header {
 
   ul {
     display: flex;
-    margin: 20px 0 0;
+    margin: 20px -0.5rem 0;
     padding: 0;
     list-style: none;
 
@@ -58,7 +58,8 @@ header {
 
 .search-form {
   position: relative;
-  width: 100%;
+  width: calc(100% + 30px);
+  margin-left: -30px;
 
   &:focus-within img {
     opacity: 1;

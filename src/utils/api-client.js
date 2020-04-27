@@ -28,10 +28,10 @@ async function client(endpoint, { body, ...customConfig } = {}) {
       return;
     }
 
-    const data = await r.json();
+    const data = await r.json().catch(() => ({}));
 
     if (r.ok) {
-        return data;
+      return data;
     } else {
       return Promise.reject(data);
     }

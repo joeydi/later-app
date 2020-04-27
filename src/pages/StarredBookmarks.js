@@ -21,7 +21,7 @@ class StarredBookmarks extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-2">Sidebar</div>
-            <div className="col-md-6 offset-md-1">
+            <div className="col-md-9 offset-md-1">
               {this.state.bookmarks.map((item, index) => (
                 <BookmarkExcerpt {...item} key={index} />
               ))}

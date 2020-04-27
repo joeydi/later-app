@@ -41,6 +41,27 @@
     transition: opacity 0.125s linear, transform 0.125s $ease-out;
 }
 
+.fade-static-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-static-enter.fade-static-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s linear 0.25s, transform 0.5s $ease-out 0.25s;
+}
+
+.fade-static-exit {
+    opacity: 1;
+}
+
+.fade-static-exit-active {
+    opacity: 0;
+    transition: opacity 0.25s linear, transform 0.25s $ease-out;
+}
+
 .main-transition-group {
     position: relative;
 }
+
