@@ -3,9 +3,8 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import { client } from "../utils/api-client";
 import BookmarkExcerpt from "../components/BookmarkExcerpt";
-import CommonTags from "../components/CommonTags";
 
-class UnreadBookmarks extends Component {
+class SearchedBookmarks extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -53,7 +52,7 @@ class UnreadBookmarks extends Component {
   }
 
   async componentDidMount() {
-    const data = await client("bookmarks/unread/");
+    const data = await client(`bookmarks/search/${this.props.match.params.query}/`);
 
     this.setState({
       bookmarks: data.results,
@@ -65,10 +64,7 @@ class UnreadBookmarks extends Component {
       <main>
         <div className="container">
           <div className="row">
-            <div className="col-md-2">
-              Sidebar
-              <CommonTags />
-            </div>
+            <div className="col-md-2">Sidebar</div>
             <div className="col-md-9 offset-md-1">
               <TransitionGroup className="bookmark-list">
                 {this.state.bookmarks.map((item) => (
@@ -94,4 +90,4 @@ class UnreadBookmarks extends Component {
   }
 }
 
-export default UnreadBookmarks;
+export default SearchedBookmarks;

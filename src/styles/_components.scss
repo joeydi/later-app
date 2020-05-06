@@ -115,3 +115,14 @@
     }
   }
 }
+
+.bookmark-list {
+  .bookmark-excerpt {
+
+  }
+  .fade-static-exit ~ .bookmark-excerpt {
+    pointer-events: none;
+    transform: translateY(calc(-1 * var(--exiting-bookmark-height)));
+    transition: transform 0.5s $snappy;
+  }
+}
