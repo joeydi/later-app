@@ -5,7 +5,7 @@ async function client(endpoint, { body, ...customConfig } = {}) {
   const headers = { "content-type": "application/json" };
 
   if (auth && auth.token) {
-    headers.Authorization = `Token ${auth.token}`;
+    headers.Authorization = `Bearer ${auth.token}`;
   }
 
   const config = {
