@@ -21,7 +21,7 @@ async function client(endpoint, { body, ...customConfig } = {}) {
     config.body = JSON.stringify(body);
   }
 
-  return window.fetch(`http://127.0.0.1:8000/${endpoint}`, config).then(async (r) => {
+  return window.fetch(`${process.env.REACT_APP_API_SERVER}/${endpoint}`, config).then(async (r) => {
     if (r.status === 401) {
       window.localStorage.removeItem(localStorageKey);
       window.location.assign(window.location);

@@ -66,7 +66,6 @@ class UnreadBookmarks extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-2">
-              Sidebar
               <CommonTags />
             </div>
             <div className="col-md-9 offset-md-1">

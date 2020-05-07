@@ -126,3 +126,44 @@
     transition: transform 0.5s $snappy;
   }
 }
+
+
+ul.common-tags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    // display: flex;
+    margin: 0 0.5rem 0.5rem 0;
+  }
+
+  a {
+    display: block;
+    padding: 4px 16px;
+    background-color: $lightest-grey;
+    border-radius: 20px;
+    line-height: 1;
+    font-weight: $font-weight-medium;
+    font-size: rem(11px);
+    color: $grey;
+    transition: background-color 0.25s linear;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $lighter-grey;
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      height: 100%;;
+      background-color: darken($lightest-grey, 1%);
+      border-radius: 20px;
+      mix-blend-mode: multiply;
+    }
+  }
+}

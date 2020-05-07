@@ -3,6 +3,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import { client } from "../utils/api-client";
 import BookmarkExcerpt from "../components/BookmarkExcerpt";
+import CommonTags from "../components/CommonTags";
 
 class SearchedBookmarks extends Component {
   constructor(props) {
@@ -48,7 +49,7 @@ class SearchedBookmarks extends Component {
       .map((key) => parseInt(style.getPropertyValue(key), 10))
       .reduce((prev, cur) => prev + cur);
 
-    el.parentElement.style.setProperty('--exiting-bookmark-height', `${elHeight}px`);
+    el.parentElement.style.setProperty("--exiting-bookmark-height", `${elHeight}px`);
   }
 
   async componentDidMount() {
@@ -64,7 +65,9 @@ class SearchedBookmarks extends Component {
       <main>
         <div className="container">
           <div className="row">
-            <div className="col-md-2">Sidebar</div>
+            <div className="col-md-2">
+              <CommonTags />
+            </div>
             <div className="col-md-9 offset-md-1">
               <TransitionGroup className="bookmark-list">
                 {this.state.bookmarks.map((item) => (
