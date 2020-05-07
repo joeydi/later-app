@@ -91,13 +91,15 @@
 
     button {
       display: flex;
+      flex-shrink: 0;
       align-items: center;
       justify-content: center;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       margin-left: 1rem;
       border-radius: 50%;
-      color: $light-grey;
+      color: $grey;
+      background-color: $lighter-grey;
       border: none;
       appearance: none;
       transition: background-color 0.25s linear, color 0.25s linear;
@@ -109,6 +111,20 @@
 
       svg {
         display: block;
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+  @include md {
+    .actions button {
+      width: 40px;
+      height: 40px;
+      color: $light-grey;
+      background-color: $lightest-grey;
+
+      svg {
         width: 20px;
         height: 20px;
       }
