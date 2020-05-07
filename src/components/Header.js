@@ -10,21 +10,19 @@ const Header = () => (
   <header>
     <div className="container">
       <div className="row align-items-center">
-        <div className="col-md-3">
+        <div className="col-6 col-md-3 order-md-1">
           <Link to="/" className="branding">
             <img src={logo} alt="Later logo" />
             Later
           </Link>
         </div>
-        <div className="col-md-6">
-          <SearchForm />
-        </div>
-        <div className="col-md-3">
+        <div className="col-6 col-md-3 order-md-3">
           <UserMenu />
         </div>
-      </div>
-      <div className="row">
-        <div className="col-md-6 offset-md-3">
+        <div className="col-md-6 order-md-2">
+          <SearchForm />
+        </div>
+        <div className="col-6 offset-md-3 order-md-4">
           <ul>
             <li>
               <NavLink exact to="/">
@@ -39,6 +37,10 @@ const Header = () => (
             </li>
           </ul>
         </div>
+
+      </div>
+      <div className="row">
+
       </div>
     </div>
   </header>

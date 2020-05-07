@@ -1,6 +1,6 @@
 header {
   position: relative;
-  padding-top: 60px;
+  padding-top: 20px;
   border-bottom: 1px solid $lighter-grey;
 
   .branding {
@@ -22,7 +22,7 @@ header {
 
   ul {
     display: flex;
-    margin: 20px -0.5rem 0;
+    margin: 0;
     padding: 0;
     list-style: none;
 
@@ -49,17 +49,29 @@ header {
 
   .avatar {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     float: right;
+  }
+
+  @include md {
+    padding-top: 60px;
+
+    ul {
+      margin: 20px -0.5rem 0;
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 
 .search-form {
   position: relative;
-  width: calc(100% + 30px);
-  margin-left: -30px;
+  margin: 20px 0 15px;
 
   &:focus-within img {
     opacity: 1;
@@ -67,11 +79,11 @@ header {
 
   img {
     position: absolute;
-    left: 30px;
-    top: 20px;
+    left: 20px;
+    top: 12px;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     opacity: 0.5;
     transition: opacity 0.25s linear;
   }
@@ -79,12 +91,29 @@ header {
   input {
     display: block;
     width: 100%;
-    height: 60px;
+    height: 40px;
     padding: 10px 30px 10px 70px;
     appearance: none;
     background-color: $lightest-grey;
     border: 1px solid $lighter-grey;
     border-radius: 30px;
     line-height: 40px;
+  }
+
+  @include md {
+    width: calc(100% + 30px);
+    margin-left: -30px;
+
+    img {
+      left: 30px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    input {
+      height: 60px;
+      padding: 10px 30px 10px 70px;
+    }
   }
 }
