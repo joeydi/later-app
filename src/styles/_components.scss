@@ -1,6 +1,7 @@
 .bookmark-excerpt {
   position: relative;
   display: block;
+  margin-left: 20px;
 
   a {
     color: inherit;
@@ -12,12 +13,11 @@
   }
 
   .favicon {
-    position: absolute;
-    left: -32px;
-    top: 6px;
     display: block;
     width: 16px;
     height: 16px;
+    float: left;
+    margin: 6px 8px 6px -20px;
     object-fit: contain;
   }
 
@@ -36,6 +36,7 @@
   }
 
   p {
+    font-size: rem(14px);
     color: $darker-grey;
   }
 
@@ -87,7 +88,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    margin-top: 1.5rem;
+    margin: 1.5rem 10px 0 0;
 
     button {
       display: flex;
@@ -119,11 +120,20 @@
   }
 
   @include md {
+    .favicon {
+      margin-left: -30px;
+    }
+
+    .actions button {
+      color: $light-grey;
+      background-color: $lightest-grey;
+    }
+  }
+
+  @include lg {
     .actions button {
       width: 40px;
       height: 40px;
-      color: $light-grey;
-      background-color: $lightest-grey;
 
       svg {
         width: 20px;
@@ -134,9 +144,6 @@
 }
 
 .bookmark-list {
-  .bookmark-excerpt {
-
-  }
   .fade-static-exit ~ .bookmark-excerpt {
     pointer-events: none;
     transform: translateY(calc(-1 * var(--exiting-bookmark-height)));
@@ -152,7 +159,6 @@ ul.common-tags {
 
   li {
     position: relative;
-    // display: flex;
     margin: 0 0.5rem 0.5rem 0;
   }
 

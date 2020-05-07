@@ -16,10 +16,10 @@ const Header = () => (
             Later
           </Link>
         </div>
-        <div className="col-6 col-md-3 order-md-3">
+        <div className="col-6 col-md-2 col-lg-3 order-md-3">
           <UserMenu />
         </div>
-        <div className="col-md-6 order-md-2">
+        <div className="col-md-7 col-lg-6 order-md-2">
           <SearchForm />
         </div>
         <div className="col-6 offset-md-3 order-md-4">
@@ -37,10 +37,6 @@ const Header = () => (
             </li>
           </ul>
         </div>
-
-      </div>
-      <div className="row">
-
       </div>
     </div>
   </header>

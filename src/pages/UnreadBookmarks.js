@@ -65,10 +65,7 @@ class UnreadBookmarks extends Component {
       <main>
         <div className="container">
           <div className="row">
-            <div className="col-md-2">
-              <CommonTags />
-            </div>
-            <div className="col-md-9 offset-md-1">
+            <div className="col-md-9 offset-lg-1 order-md-2">
               <TransitionGroup className="bookmark-list">
                 {this.state.bookmarks.map((item) => (
                   <CSSTransition
@@ -85,6 +82,9 @@ class UnreadBookmarks extends Component {
                   </CSSTransition>
                 ))}
               </TransitionGroup>
+            </div>
+            <div className="col-md-3 col-lg-2 order-md-1">
+              <CommonTags />
             </div>
           </div>
         </div>
